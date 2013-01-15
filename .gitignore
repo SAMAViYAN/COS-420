@@ -1,4 +1,6 @@
 *.suo
 *.user
 *.swp
-
+*Debug/
+*.sdf
+*.opensdf

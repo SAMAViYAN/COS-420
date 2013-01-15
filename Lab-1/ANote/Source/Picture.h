@@ -27,7 +27,7 @@ private:
 	static	bool	GetResource(CString /*LPSTR*/ lpName, CString /*LPSTR */lpType, void* pResource, int& nBufSize);
 	void			UnLoad();
 	bool			LoadFromBuffer(BYTE* pBuff, int nSize);
-//	bool			Draw(CDC* pDC, int x, int y, int cx, int cy);
+	bool			Draw(CDC* pDC, int x, int y, int cx, int cy);
 	IPicture*		m_pPicture;
 	enum
 	{
