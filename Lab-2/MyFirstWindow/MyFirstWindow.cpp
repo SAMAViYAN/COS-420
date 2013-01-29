@@ -133,6 +133,10 @@ public:
 protected:
 	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV support
 
+	void OnYourNameButtonClicked() {
+		OnOK();
+	}
+
 // Implementation
 protected:
 	DECLARE_MESSAGE_MAP()
@@ -148,6 +152,7 @@ void CAboutDlg::DoDataExchange(CDataExchange* pDX)
 }
 
 BEGIN_MESSAGE_MAP(CAboutDlg, CDialogEx)
+	ON_BN_CLICKED(IDC_YOURNAME_BUTTON, &CAboutDlg::OnYourNameButtonClicked)
 END_MESSAGE_MAP()
 
 // App command to run the dialog
